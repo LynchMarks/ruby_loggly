@@ -16,12 +16,6 @@ describe Loggly do
   end
 
   describe "#search" do
-
-    before(:each) do
-      RestClient.stub!(:get)
-      Kernel.stub!(:print)
-    end
-
     it "should generate an appropriate RestClient GET" do
 
       search_string = "search string"
@@ -45,10 +39,6 @@ describe Loggly do
   end
 
   describe "#log" do
-    
-    before(:each) do
-      RestClient.stub!(:post)
-    end
 
     it "should generate an appropriate RestClient POST with a raw payload" do
 
