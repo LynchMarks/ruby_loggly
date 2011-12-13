@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{ruby_loggly}
-  s.version = "0.0.3"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ryan Mitchell"]
-  s.date = %q{2011-08-10}
+  s.date = %q{2011-12-13}
   s.description = %q{A simple Ruby interface to the Loggly API}
   s.email = %q{mitchellryanj@gmail.com}
   s.extra_rdoc_files = [
@@ -25,6 +25,8 @@ Gem::Specification.new do |s|
     "Rakefile",
     "lib/ruby_loggly.rb",
     "ruby_loggly.gemspec",
+    "spec/ruby_loggly_device_spec.rb",
+    "spec/ruby_loggly_input_spec.rb",
     "spec/ruby_loggly_spec.rb",
     "spec/spec_helper.rb"
   ]
